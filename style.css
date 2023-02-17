@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #3f96d0, #7d0909);
+}
+
+.container
+{
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid #3f96d0;
+    box-shadow: 0 0 7px 2px #7d0909;
+}
+
+.container h2
+{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-box
+{
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+}
+
+.name
+{
+    width: 100%;
+    padding: 8px 0 8px 14px;    
+}
+
+.input-box .name
+{
+    border: 1px solid #cccccc;
+}
+
+.name:hover{
+    background-color: #d6dbdd;
+}
+
+.radio-button
+{
+    margin-left: 30px;
+}
+
+.country
+{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    color: #7b7b7b;
+    background: white;
+    appearance: none;
+    transition: all 0.2s ease;
+}
+
+.country::-ms-expand
+{
+    display: none;
+}
+
+.country:hover, .country:focus
+{
+    color: black;
+    background: #fafafa;
+
+}
+
+.arrow
+{
+    position: absolute;
+    top:calc(50% + 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.button{
+    background: linear-gradient(135deg, #3f96d0, #7d0909);
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background: linear-gradient(-135deg, #3f96d0, #7d0909);
+}
